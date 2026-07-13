@@ -30,11 +30,11 @@ app.post('/shaip', (req: Request, res: Response) => {
       // this function, so you do not need to add any input validation logic here.
 
       // The `req.body` object contains the validated input data.
-      const numbers = req.body;
+      const { numbers } = req.body;
 
       // TODO: The number adder below is a placeholder.
       // Replace this with your own business logic. For complex logic, it's best
-      // practice to import functions from other files within the `src` directory
+      // practice to import functions from other files within the `src` directory 
       // to keep this file clean and maintainable.
       const sum = numbers.reduce((acc: number, current: number) => acc + current, 0);
 
